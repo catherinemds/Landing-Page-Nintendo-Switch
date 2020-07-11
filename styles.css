@@ -18,22 +18,15 @@ header {
   display: flex;
   position: fixed;
   background-color: #eee;
-  z-index: 10;
-  width: 100%;
+  z-index: 1;
+  width: 100vw;
   align-items: center;  
   justify-content: space-between;
   padding:10px 50px 0;
 }
 
-@media {max-width: 767px} {
-  header {
-    height: 100%;
-  }
-}
-
 #header-img {
  max-width: 10%; 
- padding-top: 10px;
  margin-left: 10px;
 }
 
@@ -60,7 +53,8 @@ header a {
   font-size: 1.3rem;
   text-decoration: none;
   color: #000000;
-  margin: 60px;
+  margin: 0 50px;
+  padding: .5rem 1rem;
   cursor: pointer;
 }
 
@@ -68,15 +62,12 @@ header a:hover {
   text-decoration: underline;
 }
 
-.container {
-  margin: 0 auto;
-  z-index: 2;
- /* position: relative;*/
-}
-
 .main {
   display: flex; 
-  background-color: #FFFFFF; 
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
   height: 100vh;
   align-items: baseline;
   justify-content: center;
@@ -139,21 +130,13 @@ h2 {
   padding: 10px;
 }
 
-a {
-  font-size: 24px;
-  text-decoration: none;
-  text-align: center;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
- 
 #learn {
   background-color:  #FFFFFF; 
   display: inline-block;
   color: black;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   padding: 20px 70px;
 }
 
@@ -175,8 +158,13 @@ a {
   bottom: -14%;
 }
 
+.text {
+  padding: 0 6% 6%;
+  font-size: 18px;
+}  
+
 .cards {
-  width:100%;
+  max-width:100%;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -184,7 +172,7 @@ a {
 
 .property-card
 {
-  height:18em;
+  height:45vh;
   width:14em;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -197,7 +185,6 @@ a {
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /*border: medium solid #d73851a1;*/
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
   overflow:hidden;
  }
@@ -216,21 +203,24 @@ a {
 }
 
 .image-01 {
-background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-1.jpg);
-background-size:cover;
-background-repeat:no-repeat;
+  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center
 }
 
 .image-02 {
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-2.jpg);
   background-size:cover;
   background-repeat:no-repeat;
+  background-position: right;
 }
 
 .image-03 {
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/system-photo-04.jpg);
   background-size:cover;
   background-repeat:no-repeat;
+  background-position: center;
 }
 
 .property-description
@@ -275,28 +265,27 @@ background-repeat:no-repeat;
   cursor:pointer;
 }
 
-.text {
-  padding: 0 60px 60px;
-  font-size: 18px;
-}  
-
-h5
-{
+h5 {
   margin:0px;
   font-size:1.4em;
   font-weight:700;
 }
 
 
-#watch {
- display: inline-block;
- background-color: #FFFFFF;
- width: 100vw;
- height: 100vh;
- padding: 20px 70px;
+#trailer {
+  background-image: url(logo.png), url(base.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%, 90%;
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 70px;
 }
 
 .heading-02 {
+  display: inline-block;
   font-size: 36px;
   margin: auto;
   padding-bottom: 20px;
@@ -311,36 +300,309 @@ h5
   background: #D73851;
   border-radius: 30px;
   left: 40px;
-  top: 203%;
+  top: 202%;
 }
 
-
-.video-container {
-}
-
-.video-property{
-    position: relative;
-}
 
 #video {
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
-
+  height: 50vh;
+  transform: translate(-50%, 25%);
 }
+
 .base {
   max-width: 100%;
   max-height: 100%;
 }
 
-.sub-form{
+fieldset {
+  border: none;
+}
+
+legend {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+form {
   display: flex;
+  height: 40vh;
+  align-items: flex-end;
   justify-content: center;
-  padding: inherit;
 }
 
 input {
   width: 300px;
   height: 40px;
+  margin-right: -20px;
+}
+
+#submit {
+  background-color: #D73851;
+  border: none;
+  color: #FFFFFF;
+  font-size: larger;
+  margin: 0;
+  width: 200px;
+  height: 43px;
+  padding-bottom: 4px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  header a {
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .heading-01 {
+    padding: 0;
+  }
+
+  .text {
+    padding: 0 6%;
+    font-size: 1rem;
+  }
+
+  .property-card {
+    margin-right: 2%;
+  }
+
+  .heading-01 .heading-02 {
+    font-size: 24px; 
+  }
+
+  .heading-01:before .heading-02:before {
+    width: 60px;
+  }
+
+  .video-box {
+    display: none;
+  }
+
+  form {
+    height: 95vh;
+  }
+
+}
+
+
+@media screen and (max-width: 768px){
+  header a {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .text-group {
+    top:22%;
+  }
+
+  .heading-01:before {
+    bottom: -16%;
+  }
+
+  .text {
+    font-size: 1rem;
+    padding: 0 6%;
+  }
+
+  .cards {
+    padding-left: 4%;
+    text-align: center;
+  }
+
+  .property-description {
+    width: auto;
+    height: 60%;
+    font-size: .8rem;
+  }
+
+  .property-image {
+    height: 10em;
+    width: 14em;
+  }
+
+  .property-card {
+    height: 16em;
+    width: 12em;
+  } 
+
+}
+
+@media screen and (max-width: 619px) {
+  header a {
+    margin: 0 15px;
+  }
+    h1 {
+    font-size: 2.7rem;
+    margin-top: 0;
+  }
+
+  .property-card {
+    height: 12em;
+  }
+
+  .property-image {
+    height: 96px;
+    width: 14em;
+  }
+
+  .property-description {
+    font-size: .7rem;
+  }
+
+  p {
+    margin: 0
+  }
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header a {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  #header-img {
+    width: 14%;
+  }
+
+  .text-group {
+    top: 30%;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .heading-01 {
+    padding-bottom: 3%;
+  }
+
+  .heading-01 .heading-02 {
+    font-size: 24px; 
+  }
+
+  .heading-01:before {
+    bottom: -16%;
+  }
+
+  .heading-02:before {
+    top: 201%;
+    height: 60px;
+  }
+
+  .text {
+    font-size: .9rem;
+    padding-bottom: 3%;
+  }
+
+  .cards {
+    padding-left: 6%;
+  }
+  .property-card {
+    margin: 0;
+    height: 13em;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  header a {
+    font-size: .9rem;
+    margin: 0 10px;
+  }
+
+  .text-group {
+    top: 31%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: .7rem;
+  }
+
+  .cards {
+    width: 360px;
+  }
+  
+  .property-card {
+    margin-right: 6%;
+    height: 14em;
+  }
+
+  .property-description {
+    font-size: .6rem;
+  }
+}
+
+@media (max-height: 500px) {
+
+  header {
+    height: 13vh;
+  }
+
+  #header-img {
+    max-width: 5%;
+    margin-top: 0;
+}
+
+  header a {
+    font-size: 1rem;
+  }
+
+  .main {
+    background-size: 42%;
+  }
+
+  .text-group{
+    top: 22%;
+  }
+
+  .video-box {
+    display: none;
+  }
+
+  .headind-01, .text {
+    padding: 0;
+  }
+
+  .heading-01:before {
+    bottom: -18%;
+  }
+
+  .property-card {
+    height: 40vh;
+  }
+
+  .property-description {
+    height: 8em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  .property-description p {
+    font-size: 14px;
+  }
+
+  #trailer {
+    background-size: 20%, 70%;
+  }
+
+  form {
+    height: 90vh;
+  }
 }
