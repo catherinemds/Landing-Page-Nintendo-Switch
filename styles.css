@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-*{
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
   margin: 0px;
   overflow-x: hidden;
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -20,41 +20,34 @@ header {
   background-color: #eee;
   z-index: 1;
   width: 100vw;
-  align-items: center;  
+  align-items: center;
   justify-content: space-between;
-  padding:10px 50px 0;
+  padding: 0;
 }
 
 #header-img {
- max-width: 10%; 
- margin-left: 10px;
+  width: 60px;
+  height: 60px;
 }
 
+ul,
 nav {
-  display: flex;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  right: 0;
-  list-style: none;
-  justify-content: space-between;
-}
-ul, nav {
   display: flex;
   list-style: none;
   padding: 0;
 }
 
- nav, li {
+nav,
+li {
   margin: 0;
 }
 
-header a { 
+header a {
   font-size: 1.3rem;
   text-decoration: none;
   color: #000000;
   margin: 0 50px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
@@ -63,8 +56,8 @@ header a:hover {
 }
 
 .main {
-  display: flex; 
-  background-image: url(Background.jpg);
+  display: flex;
+  background-image: url(Images/Background.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
@@ -73,7 +66,7 @@ header a:hover {
   justify-content: center;
   padding-left: 30px;
   flex-direction: column;
-  }
+}
 
 .bg-img {
   position: absolute;
@@ -109,12 +102,11 @@ header a:hover {
   bottom: 0;
 }
 
-
 h1 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: auto;
-  }
+}
 
 h2 {
   font-size: 1.5rem;
@@ -122,16 +114,16 @@ h2 {
   margin: auto;
 }
 
-.button{
+.button {
   width: 365px;
-  height:41px;
+  height: 41px;
   background: #d73851;
   border: 1px solid #d73851;
   padding: 10px;
 }
 
 #learn {
-  background-color:  #FFFFFF; 
+  background-color: #ffffff;
   display: inline-block;
   color: black;
   margin: 0 auto;
@@ -148,11 +140,11 @@ h2 {
 
 .heading-01:before {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 70px;
-  background: #D73851;
+  background: #d73851;
   border-radius: 30px;
   left: 40px;
   bottom: -14%;
@@ -161,124 +153,116 @@ h2 {
 .text {
   padding: 0 6% 6%;
   font-size: 18px;
-}  
+}
 
 .cards {
-  max-width:100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
 }
 
-.property-card
-{
-  height:45vh;
-  width:14em;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-card {
+  height: 45vh;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-  overflow:hidden;
- }
+  overflow: hidden;
+}
 
-.property-image
-{
+.property-image {
   height: 6em;
   width: 14em;
   padding: 1em 0;
   right: 0;
   position: absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .image-01 {
-  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-1.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center
+  background-image: url(Images/card_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-02 {
-  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-2.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-image: url(Images/card_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
 }
 
 .image-03 {
-  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/system-photo-04.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-image: url(Images/card_03.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
-.property-description
-{
-  background-color: #FFFFFF;
-  height:12em;
-  width:14em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-description {
+  background-color: #ffffff;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
-  text-align:center;
+  text-align: center;
 }
 
-.property-social-icons
-{
-  width:1em;
-  height:1em;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-social-icons {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
 }
-.property-card:hover .property-image
-{
-  height:18em;
+.property-card:hover .property-image {
+  height: 18em;
 }
 
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
+.property-card:hover .property-social-icons:hover {
+  background-color: blue;
+  cursor: pointer;
 }
 
 h5 {
-  margin:0px;
-  font-size:1.4em;
-  font-weight:700;
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
 }
 
-
 #trailer {
-  background-image: url(logo.png), url(base.png);
+  background-image: url(Images/logo.png), url(Images/base.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25%, 90%;
   display: inline-block;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   padding: 20px 70px;
@@ -293,16 +277,15 @@ h5 {
 
 .heading-02:before {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 70px;
-  background: #D73851;
+  background: #d73851;
   border-radius: 30px;
   left: 40px;
   top: 202%;
 }
-
 
 #video {
   position: relative;
@@ -340,9 +323,9 @@ input {
 }
 
 #submit {
-  background-color: #D73851;
+  background-color: #d73851;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: larger;
   margin: 0;
   width: 200px;
@@ -371,7 +354,7 @@ input {
   }
 
   .heading-01 .heading-02 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .heading-01:before .heading-02:before {
@@ -385,18 +368,16 @@ input {
   form {
     height: 95vh;
   }
-
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   header a {
     margin: 0 20px;
     padding: 0;
   }
 
   .text-group {
-    top:22%;
+    top: 22%;
   }
 
   .heading-01:before {
@@ -416,7 +397,7 @@ input {
   .property-description {
     width: auto;
     height: 60%;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .property-image {
@@ -427,15 +408,14 @@ input {
   .property-card {
     height: 16em;
     width: 12em;
-  } 
-
+  }
 }
 
 @media screen and (max-width: 619px) {
   header a {
     margin: 0 15px;
   }
-    h1 {
+  h1 {
     font-size: 2.7rem;
     margin-top: 0;
   }
@@ -450,11 +430,11 @@ input {
   }
 
   .property-description {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   p {
-    margin: 0
+    margin: 0;
   }
 }
 
@@ -489,7 +469,7 @@ input {
   }
 
   .heading-01 .heading-02 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .heading-01:before {
@@ -502,7 +482,7 @@ input {
   }
 
   .text {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding-bottom: 3%;
   }
 
@@ -517,7 +497,7 @@ input {
 
 @media screen and (max-width: 433px) {
   header a {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: 0 10px;
   }
 
@@ -530,25 +510,24 @@ input {
   }
 
   .text {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .cards {
     width: 360px;
   }
-  
+
   .property-card {
     margin-right: 6%;
     height: 14em;
   }
 
   .property-description {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }
 
 @media (max-height: 500px) {
-
   header {
     height: 13vh;
   }
@@ -556,7 +535,7 @@ input {
   #header-img {
     max-width: 5%;
     margin-top: 0;
-}
+  }
 
   header a {
     font-size: 1rem;
@@ -566,7 +545,7 @@ input {
     background-size: 42%;
   }
 
-  .text-group{
+  .text-group {
     top: 22%;
   }
 
@@ -574,7 +553,8 @@ input {
     display: none;
   }
 
-  .headind-01, .text {
+  .headind-01,
+  .text {
     padding: 0;
   }
 
